@@ -66,6 +66,7 @@ const Navigation = () => {
             <Button 
               size="sm"
               className="bg-gradient-to-r from-accent to-primary hover:from-accent/90 hover:to-primary/90 text-white"
+              onClick={() => window.open("https://drive.google.com/file/d/1_ZIViPpQjBZ4b5z3OfMN2ojqZbicGD9I/view", "_blank")}
             >
               <Download className="mr-2 h-4 w-4" />
               Resume
