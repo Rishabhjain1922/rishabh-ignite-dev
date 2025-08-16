@@ -10,8 +10,8 @@ const Experience = () => {
       type: "Full-Stack Development",
       description: "At NucleusTeq, I worked on full-stack development, building robust backend services using Java and Spring Boot, and creating responsive frontends with React.",
       achievements: [
-        "Developed scalable applications using Java with Spring Boot for backend logic and React for seamless user interfaces",
-        "During my internship at NucleusTeq, I developed scalable applications using Java with Spring Boot for backend logic and React for seamless user interfaces"
+        "Improved backend performance by 25% by optimizing REST APIs with Spring Boot, reducing response time for high-traffic endpoints",
+        "Built and deployed 3+ scalable full-stack modules using React and Java, which were integrated into client-facing applications impacting 500+ users"
       ],
       current: true
     },
@@ -23,8 +23,8 @@ const Experience = () => {
       type: "Full-Stack Development",
       description: "At SNS Digitech Pvt. Ltd., I worked as a full-stack developer, building responsive user interfaces with React and developing secure, RESTful backend services using Java and Spring Boot to support business-critical features.",
       achievements: [
-        "Built responsive user interfaces with React and developed secure, RESTful backend services using Java and Spring Boot",
-        "Supported business-critical features with robust backend architecture and seamless frontend integration"
+        "Developed 5+ secure backend services with Spring Boot and JWT, improving application security and reducing vulnerabilities by 30%",
+        "Designed a responsive React-based dashboard that increased client team efficiency by 20% through better data visualization and usability"
       ],
       current: false
     }

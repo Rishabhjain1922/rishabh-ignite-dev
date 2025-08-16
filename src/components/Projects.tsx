@@ -15,8 +15,7 @@ const Projects = () => {
         "Real-time dashboard visualization",
         "Model prediction analytics"
       ],
-      githubUrl: "#",
-      liveUrl: "#"
+      githubUrl: "https://github.com/Rishabhjain1922/Satellite-Image-Analysis-of-Thar-Desert"
     },
     {
       title: "Secure Event Organizer",
@@ -30,11 +29,10 @@ const Projects = () => {
         "PostgreSQL database integration",
         "Docker containerization"
       ],
-      githubUrl: "#",
-      liveUrl: "#"
+      githubUrl: "https://github.com/Rishabhjain1922/Secure-Event-Management"
     },
     {
-      title: "E-Commerce Platform",
+      title: "Secure Role-Based E-Commerce Platform with Payments",
       description: "Built a secure, containerized RESTful e-commerce API with JWT-based authentication, role-based access control, SQLite integration, and features including payment checkout, inventory management, and order processing.",
       tech: ["Python", "FastAPI", "SQLAlchemy", "PostgreSQL"],
       icon: ShoppingCart,
@@ -45,8 +43,7 @@ const Projects = () => {
         "Inventory management",
         "Order processing workflow"
       ],
-      githubUrl: "#",
-      liveUrl: "#"
+      githubUrl: "https://github.com/Rishabhjain1922/E-Comm-Application-using-FastAPI"
     }
   ];
 
@@ -119,24 +116,14 @@ const Projects = () => {
 
               {/* Project actions */}
               <div className="p-6 pt-0 space-y-3">
-                <div className="flex gap-3">
-                  <Button 
-                    size="sm" 
-                    className="flex-1 bg-gradient-to-r from-accent to-primary hover:from-accent/90 hover:to-primary/90 text-white"
-                  >
-                    <Github className="mr-2 h-4 w-4" />
-                    Code
-                  </Button>
-                  
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
-                    className="flex-1 glass border-primary/30 text-foreground hover:text-primary"
-                  >
-                    <Eye className="mr-2 h-4 w-4" />
-                    Demo
-                  </Button>
-                </div>
+                <Button 
+                  size="sm" 
+                  className="w-full bg-gradient-to-r from-accent to-primary hover:from-accent/90 hover:to-primary/90 text-white"
+                  onClick={() => window.open(project.githubUrl, '_blank')}
+                >
+                  <Github className="mr-2 h-4 w-4" />
+                  View Code
+                </Button>
               </div>
 
               {/* Hover gradient overlay */}
@@ -151,6 +138,7 @@ const Projects = () => {
             size="lg"
             variant="outline"
             className="glass glass-hover border-primary/30 text-foreground hover:text-primary px-8 py-3"
+            onClick={() => window.open('https://github.com/Rishabhjain1922', '_blank')}
           >
             <ExternalLink className="mr-2 h-5 w-5" />
             View All Projects

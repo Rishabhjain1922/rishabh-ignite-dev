@@ -17,11 +17,10 @@ const Skills = () => {
       title: "Languages",
       icon: Code2,
       skills: [
-        { name: "Java", level: 90 },
-        { name: "Python", level: 85 },
-        { name: "JavaScript", level: 88 },
-        { name: "C", level: 80 },
-        { name: "TypeScript", level: 82 }
+        { name: "Java", level: 95 },
+        { name: "Python", level: 90 },
+        { name: "JavaScript", level: 70 },
+        { name: "C", level: 60 }
       ]
     },
     {
@@ -31,8 +30,7 @@ const Skills = () => {
         { name: "React", level: 90 },
         { name: "Spring Boot", level: 88 },
         { name: "FastAPI", level: 85 },
-        { name: "Bootstrap", level: 80 },
-        { name: "JWT", level: 82 }
+        { name: "Bootstrap", level: 80 }
       ]
     },
     {
@@ -71,10 +69,10 @@ const Skills = () => {
       title: "Development",
       icon: Globe,
       skills: [
-        { name: "VS Code", level: 95 },
-        { name: "MATLAB", level: 70 },
-        { name: "IntelliJ IDEA", level: 85 },
-        { name: "Figma", level: 75 }
+        { name: "Cursor", level: 95 },
+        { name: "Figma", level: 75 },
+        { name: "n8n", level: 80 },
+        { name: "Lovable", level: 85 }
       ]
     }
   ];

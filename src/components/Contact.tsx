@@ -35,15 +35,32 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      // Create mailto link with form data
+      const subject = encodeURIComponent(formData.subject);
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
+      const mailtoLink = `mailto:Rishabhjain1922@gmail.com?subject=${subject}&body=${body}`;
+      
+      // Open default email client
+      window.location.href = mailtoLink;
+      
       toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+        title: "Email client opened!",
+        description: "Your default email client should open with the message. If not, please email me directly at Rishabhjain1922@gmail.com",
       });
+      
       setFormData({ name: "", email: "", subject: "", message: "" });
-    }, 2000);
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "There was an issue opening your email client. Please email me directly at Rishabhjain1922@gmail.com",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -71,20 +88,20 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/rishabhjain1922",
+      href: "https://www.linkedin.com/in/rishabh-jain-22a19422a/",
       username: "@rishabhjain1922"
     },
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com",
-      username: "@rishabhjain"
+      href: "https://github.com/Rishabhjain1922",
+      username: "@Rishabhjain1922"
     },
     {
       icon: ExternalLink,
       label: "LeetCode",
-      href: "https://leetcode.com",
-      username: "@rishabhjain"
+      href: "https://leetcode.com/u/Rishabhjain1922/",
+      username: "@Rishabhjain1922"
     }
   ];
 

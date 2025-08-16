@@ -14,8 +14,8 @@ const About = () => {
               
               <p className="text-lg text-muted-foreground leading-relaxed">
                 I'm a passionate software engineer with a strong foundation in full-stack development. 
-                Currently pursuing my B.Tech in Electronics and Telecommunication Engineering, 
-                I've gained hands-on experience through internships and personal projects.
+                I have graduated with a B.E. from RV College of Engineering Bangalore, 
+                and gained hands-on experience through internships and personal projects.
               </p>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -56,7 +56,7 @@ const About = () => {
                 <div className="flex-1 space-y-2">
                   <h4 className="text-xl font-semibold">R.V College of Engineering</h4>
                   <p className="text-primary font-medium">
-                    B.Tech - Electronics and Telecommunication Engineering
+                    B.E. - Electronics and Telecommunication Engineering
                   </p>
                   
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">

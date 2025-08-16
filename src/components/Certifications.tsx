@@ -102,6 +102,13 @@ const Certifications = () => {
                   size="sm" 
                   variant="outline"
                   className="w-full glass border-primary/30 text-foreground hover:text-primary"
+                  onClick={() => {
+                    const urls = {
+                      0: "https://drive.google.com/file/d/1lzCjlpkB0S2Ur_F0GmCs8FS92KBiRZOJ/view?usp=sharing",
+                      1: "https://drive.google.com/file/d/1Qoz694pwTp_JzHd1w5tZhu2MhNeonYO_/view?usp=sharing"
+                    };
+                    window.open(urls[index] || "#", '_blank');
+                  }}
                 >
                   <ExternalLink className="mr-2 h-4 w-4" />
                   View Certificate
